@@ -27,6 +27,11 @@ body {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
 button {
     cursor: pointer;
 }
@@ -227,18 +232,13 @@ img {
     padding-bottom: 120px;
 }
 
-.working-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .working-img-list {
     display: flex;
     gap: 24px;
 }
 
 .working-img-title {
+    text-align: center;
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -258,12 +258,6 @@ img {
     background-color: var(--background-light);
 }
 
-.our-team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .team-list {
     display: flex;
     gap: 24px;
@@ -277,6 +271,7 @@ img {
 }
 
 .team-title {
+    text-align: center;
     margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -319,6 +314,7 @@ img {
 
 .logo-footer {
     display: inline-block;
+    margin-right: 0;
     margin-bottom: 16px;
 }
 
